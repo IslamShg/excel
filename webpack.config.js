@@ -3,7 +3,6 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const loader = require('sass-loader')
 
 const isProd = process.env.NODE_ENV === 'production'
 const isDev = !isProd
@@ -21,7 +20,7 @@ const jsLoaders = () => {
   ]
 
   if (isDev) {
-    loader.push('eslint-loader')
+    loaders.push('eslint-loader')
   }
 
   return loaders
@@ -40,7 +39,8 @@ module.exports = {
     port: 3000,
     hot: isDev,
     contentBase: path.resolve(__dirname, 'src'),
-    watchContentBase: true
+    liveReload: true,
+    watchContentBase: true,
   },
   target: 'web',
   resolve: {
