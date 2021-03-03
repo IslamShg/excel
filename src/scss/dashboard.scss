@@ -1,0 +1,102 @@
+@import "variables";
+@import "mixins";
+
+.db {
+
+  &__header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: $db-header-height;
+    background-color: #fff;
+    box-shadow: 0 2px 5px 2px rgba(60, 64, 67, 0.15);
+  }
+
+  &__new {
+    margin-top: $db-header-height;
+    padding: 1.5rem;
+    background-color: #dadce0;
+  }
+
+  &__create {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 160px;
+    height: 160px;
+
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #dadce0;
+
+    &:hover {
+      cursor: pointer;
+      color: green;
+      border-color: green;
+    }
+  }
+
+  &__view {
+    margin: 0 auto;
+    max-width: 1000px;
+  } 
+
+  &__table {
+    padding: 1rem;
+  }  
+
+  &__list-header {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+    padding: 0 12px;
+    
+    color: #202124;
+    font-weight: 500;
+    font-size: 16px;
+  } 
+ 
+  &__list {
+    @include clear-list;
+  }
+
+  &__record {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 14px 12px 16px;
+    margin-bottom: 10px;
+
+    &:hover {
+      background-color: #e6f4ea;
+      border-radius: 25px;
+    }
+
+    a {
+      text-decoration: none;
+      cursor: pointer;
+      color: #202124;
+      font-size: 14px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+}

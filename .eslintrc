@@ -6,6 +6,7 @@
     "node": true
   },
   "rules": {
+    "eol-last": "off",
     "semi": "off",
     "require-jsdoc": "off",
     "arrow-parens": "off",
