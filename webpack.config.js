@@ -33,7 +33,7 @@ module.exports = {
   },
   devtool: isDev ? 'source-map' : false,
   devServer: {
-    port: 3000,
+    port: 8800,
     hot: isDev,
     contentBase: path.resolve(__dirname, 'src'),
     liveReload: true,
