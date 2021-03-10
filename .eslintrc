@@ -15,7 +15,8 @@
     "no-unused-vars": "off",
     "no-trailing-spaces": "off",
     "operator-linebreak": "off",
-    "spaced-comment": "off"
+    "spaced-comment": "off",
+    "indent": "off"
   },
   "extends": ["eslint:recommended", "google"]
 }
