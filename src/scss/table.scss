@@ -50,6 +50,10 @@
   }
 
   .cell {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
     min-width: 40px;
     width: $cell-width;
     height: 100%;
