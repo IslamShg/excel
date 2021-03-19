@@ -51,8 +51,9 @@
 
   .cell {
     overflow: hidden;
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
 
     min-width: 40px;
     width: $cell-width;
