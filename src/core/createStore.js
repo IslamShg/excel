@@ -11,8 +11,10 @@ export class Store {
     this._listeners.push(fn)
     return {
       unsubscribe() {
-        this._listeners = 
+        if (this._listeners) {
+          this._listeners = 
           this._listeners.filter(listener => listener !== fn)
+        }
       }
     }
   }
