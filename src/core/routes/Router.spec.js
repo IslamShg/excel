@@ -24,7 +24,7 @@ describe('Router:', () => {
     $root = document.createElement('div')
     router = new Router($root, {
       dashboard: DashboardPage,
-      excel: Excel  
+      excel: Excel  ``
     })    
   })
   
